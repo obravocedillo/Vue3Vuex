@@ -44,6 +44,9 @@ export default {
         const getPokemons = async () => {
             // Dispatch GET_POKEMONS action without payload
            await store.dispatch("GET_POKEMONS", {});
+
+           // Print value of pokemons in store
+           console.log(pokemons.value)
         };
 
         /**
